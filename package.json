@@ -1,0 +1,38 @@
+{
+    "name": "settle_token",
+    "version": "1.0.0",
+    "description": "Settle Token",
+    "main": "index.js",
+    "scripts": {
+        "lint": "npm run lint:js && npm run lint:sol",
+        "lint:fix": "npm run lint:js:fix",
+        "lint:js": "eslint .",
+        "lint:js:fix": "eslint . --fix",
+        "lint:sol": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
+        "test": "npx mocha --exit --recursive test"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@openzeppelin/contracts": "^3.3.0",
+        "@openzeppelin/test-environment": "^0.1.9",
+        "@openzeppelin/test-helpers": "^0.5.10",
+        "chai": "^4.2.0",
+        "dotenv": "^8.2.0",
+        "eslint": "^7.17.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-mocha-no-only": "^1.1.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^5.0.0",
+        "ganache-cli": "^6.12.2",
+        "mocha": "^8.1.2",
+        "solhint": "^3.3.2",
+        "truffle": "^5.1.62",
+        "truffle-hdwallet-provider": "^1.0.17"
+    }
+}
